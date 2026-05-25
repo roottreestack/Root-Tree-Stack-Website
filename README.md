@@ -107,29 +107,53 @@ Access at `/dashboard/` after logging in. Provides complete control over all web
 
 rts-website/
 ├── rts/ # Django project config (settings, urls, wsgi)
+
 ├── apps/
+
 │ ├── core/ # Custom User model, auth middleware, site settings, activity log
+
 │ ├── home/ # Homepage (hero + section visibility toggles)
+
 │ ├── about/ # About page (mission, vision, timeline, achievements)
+
 │ ├── services/ # Service catalog with categories
+
 │ ├── portfolio/ # Portfolio projects with categories
+
 │ ├── technologies/ # Tech stack grouped by category
+
 │ ├── team/ # Team members
+
+
 │ ├── blog/ # Blog posts, categories, tags, Monaco rendering
 │ └── contact/ # Contact form & message storage
+
 ├── dashboard/ # Custom CMS dashboard (full CRUD, settings, activity log)
+
 ├── templates/ # All HTML templates
+
 │ ├── base.html # Public site base layout
+
 │ ├── dashboard/base.html # Dashboard layout
+
 │ ├── home/, about/, services/, portfolio/, technologies/, team/, blog/, contact/
+
 │ ├── auth/ # Login template
+
 │ └── errors/ # 404, 500 error pages
+
 ├── static/
+
 │ ├── css/main.css # Complete dark theme CSS (green #22c55e accent)
+
 │ └── js/main.js # Navbar, filters, animations, Monaco initializer
+
 ├── media/ # User-uploaded images (team photos, project images, blog thumbnails)
+
 ├── manage.py
+
 ├── seed.py # Initial data seed script (populates demo services, portfolio, etc.)
+
 └── requirements.txt
 
 
